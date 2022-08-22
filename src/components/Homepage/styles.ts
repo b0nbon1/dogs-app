@@ -13,7 +13,7 @@ export const MainContainer = styled.SafeAreaView`
 
 export const GridSView = styled.View`
   margin-right: -15px;
-  padding: 16px;
+  padding-horizontal: 16px;
   flex: 1;
 `;
 
@@ -24,7 +24,7 @@ export const Card = styled.TouchableOpacity`
   flex-basis: 40%;
   flex-grow: 1;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   position: relative;
   padding: 5px;
   elevation: 1;
@@ -47,8 +47,11 @@ export const BreedName = styled.Text`
 `;
 
 export const HeaderContainer = styled.View`
+  background-color: ${props => props.theme.background};
   flex-direction: row;
   align-items: center;
+  padding-horizontal: 16px;
+  padding-vertical: 5px;
 `;
 
 export const LoaderView = styled.View`
@@ -66,4 +69,13 @@ export const LoaderContainer = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
+`;
+
+export const TitleText = styled.Text`
+  font-size: 24px;
+  font-family: Poppins-Bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: ${props => props.theme.text};
+  margin-left: 16px;
 `;

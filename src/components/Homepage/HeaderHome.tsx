@@ -1,12 +1,12 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {HeaderContainer} from './styles';
+import {HeaderContainer, TitleText} from './styles';
 
 const HeaderHome = () => {
   return (
     <HeaderContainer>
-      <Icon name="ios-menu-outline" size={30} />
-      
+      <Icon name="paw-sharp" size={50} />
+      <TitleText>Dogs Breed App</TitleText>
     </HeaderContainer>
   );
 };

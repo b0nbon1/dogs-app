@@ -78,5 +78,15 @@
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>whatsapp</string>
+    <string>mailto</string>
+    <string>instagram</string>
+    <string>instagram-stories</string>
+    <string>fb</string>
+    <string>facebook-stories</string>
+		<string>telegram</string>
+  </array>
 </dict>
 </plist>

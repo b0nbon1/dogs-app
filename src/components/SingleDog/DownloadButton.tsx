@@ -47,8 +47,10 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({
   });
 
   const handleDownload = async () => {
-    await handleDownloadImage();
-    (downloaded as any).value = withSpring(1);
+    if (!downloaded.value) {
+      await handleDownloadImage();
+      (downloaded as any).value = withSpring(1);
+    }
   };
 
   return (
