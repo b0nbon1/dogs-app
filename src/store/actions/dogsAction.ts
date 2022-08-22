@@ -11,7 +11,7 @@ export const getAllDogsAction =
   async (dispatch: AppDispatch): Promise<string[]> => {
     try {
       dispatch(dogslistRequestReducer({page}));
-      const res = await fetchDogs(page === 1 ? 10 : 20);
+      const res = await fetchDogs(page === 1 ? 10 : 5);
       dispatch(dogsListSuccessReducer({page, data: res}));
       return res;
     } catch (error) {

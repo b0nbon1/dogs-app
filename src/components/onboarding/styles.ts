@@ -6,7 +6,7 @@ const windowWidth = Dimensions.get('window').width;
 const imageHeight = Math.floor(windowHeight / 2);
 const textContainerWidth = `${Math.floor((windowWidth * 3) / 4)}px`;
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: ${props => props.theme.blockquotebg};
 `;
